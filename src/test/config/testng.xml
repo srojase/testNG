@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestSuite" verbose="1">
+    <test name="PersistenceTest">
+        <!--
+            Grupos en que se dividen las pruebas
+            unitarias. El orden vendrá descrito en las
+            anotaciones propias de cada clase de test. 
+         -->
+        <groups>
+            <define name="root">
+                <include name="prueba" />
+            </define>
+            <run>
+                <include name="root" />
+            </run>
+        </groups>
+    </test>
+</suite>
